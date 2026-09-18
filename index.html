@@ -54,17 +54,35 @@
       color: #666;
       font-size: 0.9rem;
     }
+    .profile-header {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+  .profile-photo {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
   </style>
 </head>
 
 <body>
 
-  <header>
+ <header class="profile-header">
+  <img src="images/face63.png"
+       alt="Jordi Cuesta"
+       class="profile-photo">
+
+  <div>
     <h1>Jordi Cuesta</h1>
     <p class="subtitle">
       Independent researcher in machine learning, optimization and scientific computing
     </p>
-  </header>
+  </div>
+</header>
 
   <section>
     <h2>About</h2>
